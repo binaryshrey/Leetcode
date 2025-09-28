@@ -35,14 +35,14 @@ Constraints:
 
 ## Soln 1
 
-if N == 1: return True [Happy Number]
-if N repeats itself (that means there's a cycle not ending in 1): return False [Not Happy Number]
-keep a record of N (in a seen set)
-update N to sum of square of digits
+- if N == 1: return True [Happy Number]
+- if N repeats itself (that means there's a cycle not ending in 1): return False [Not Happy Number]
+- keep a record of N (in a seen set)
+- update N to sum of square of digits
 
 
-Time Complexity : O(log n)
-Space Complexity: O(1)
+- Time Complexity : O(log n)
+- Space Complexity: O(1)
 
 ```
 class Solution:
@@ -74,8 +74,8 @@ class Solution:
 
 
 ## Soln 2
-Time Complexity : O(log n)
-Space Complexity: O(1)
+- Time Complexity : O(log n)
+- Space Complexity: O(1)
 
 
 ```
