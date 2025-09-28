@@ -31,10 +31,9 @@ Constraints:
 
 
 
-## ----------------------------------------------------------
-## ✅ Approach 1: Brute Force
-## ----------------------------------------------------------
-## Idea:
+
+
+## Soln 1
 
 if N == 1: return True [Happy Number]
 if N repeats itself (that means there's a cycle not ending in 1): return False [Not Happy Number]
@@ -42,10 +41,10 @@ keep a record of N (in a seen set)
 update N to sum of square of digits
 
 
-## Soln 1
-## Time Complexity : O(log n)
-## Space Complexity: O(1)
+Time Complexity : O(log n)
+Space Complexity: O(1)
 
+```
 class Solution:
 
     def getSumSquare(self, no):
@@ -71,13 +70,15 @@ class Solution:
             else:
                 sum_set.add(sum)
                 n = sum
-                
+```                
 
 
 ## Soln 2
-## Time Complexity : O(log n)
-## Space Complexity: O(1)
+Time Complexity : O(log n)
+Space Complexity: O(1)
 
+
+```
 class Solution:
     def getSumSquare(self, n):
         total = 0
@@ -94,7 +95,7 @@ class Solution:
             slow = self.getSumSquare(slow)
             fast = self.getSumSquare(self.getSumSquare(fast))
         return fast == 1
-
+```
         
 
         
